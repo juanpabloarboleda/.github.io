@@ -1,0 +1,49 @@
+<html>
+<link rel="stylesheet" type="text/css" href="index.css">
+
+</style>
+
+<body background="y.jpg">
+
+<p class="y"> Ensayo musical</p>
+<p class="z">Volumen <br> general</p>
+
+<audio  id="p1"  src="Bateria.mp3" autoplay preload></audio>
+
+<audio  id="p2"  src="Bajo.mp3" autoplay preload></audio>
+
+<audio  id="p3"  src="flauta.mp3" autoplay preload></audio>
+
+<audio  id="p4"  src="maracas.mp3" autoplay preload></audio>
+
+<audio  id="p5"  src="piano.mp3" autoplay preload></audio>
+
+<div>
+    <button onclick="document.getElementById('p1').play()" class="a"><span>Bateria</button>
+    <button onclick="document.getElementById('p1').pause()" class="a1">Pausa</button>
+</div>
+<div>
+    <button onclick="document.getElementById('p2').play()" class="b">Bajo</button>
+    <button onclick="document.getElementById('p2').pause()" class="b1">Pausa</button>
+</div>
+<div>
+    <button onclick="document.getElementById('p3').play()" class="c">flauta</button>
+    <button onclick="document.getElementById('p3').pause()" class="c1">Pausa</button>
+</div>
+<div>
+    <button onclick="document.getElementById('p4').play()" class="d">Maraca</button>
+    <button onclick="document.getElementById('p4').pause()" class="d1">Pausa</button>
+</div>
+<div>
+    <button onclick="document.getElementById('p5').play()" class="e">piano</button>
+    <button onclick="document.getElementById('p5').pause()" class="e1">Pausa</button>
+</div>
+
+
+<div>
+    <button onclick="document.getElementById('p5').volume += .5;document.getElementById('p4').volume += .5;document.getElementById('p3').volume += .5;document.getElementById('p2').volume += .5;document.getElementById('p1').volume += .5" class="j">Subir V</button>
+    <button onclick="document.getElementById('p5').volume -= .1;document.getElementById('p4').volume -= .1;document.getElementById('p3').volume -= .1;document.getElementById('p2').volume -= .1;document.getElementById('p1').volume -= .1" class="q">Bajar V</button>
+</div>
+
+</body>
+</html>
